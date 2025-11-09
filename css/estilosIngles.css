@@ -1,0 +1,367 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#regressivo{
+    background-color: red;
+    color: #d5f506;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.google-map{
+
+height: 30rem;
+position: relative;
+border-radius: 2rem;
+}
+
+.google-map iframe{
+    border-radius: 2rem !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+#euquero{
+    color: gold;
+    background-color: #0a1f44;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#segundo_bloco{
+    margin-top: 70px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: pulse 1.5s infinite;
+}
+
+ .whatsapp-float img {
+  width: 35px;
+  height: 35px;
+  filter: invert(100%); /* deixa o ícone branco */
+ }  
+
+ @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Geração de CSS para os 3 Cards de Preços */
+
+:root {
+    --azul-principal: #0a1f44; /* Cor escura base para títulos */
+    --vermelho-destaque: #b80015; /* Cor de destaque (CTA e Selo) */
+    /* --cinza-fundo: #f4f4f9; Fundo suave da seção */
+    --branco: #ffffff;
+    --cinza-claro: #dddddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilização da Seção (fundo e centralização) */
+.pricing-section {
+    padding: 60px 20px;
+    background-color: var(--cinza-fundo);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color:white;
+    margin-bottom: 40px;
+}
+
+/* Container que organiza os 3 cards lado a lado */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+/* Estilo do Card Individual */
+.pricing-card {
+    width: 100%;
+    max-width: 330px;
+    background-color: var(--branco);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--cinza-claro);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Destaque para o card "Mais Popular" */
+.featured-card {
+    border: 3px solid var(--vermelho-destaque);
+    box-shadow: 0 10px 30px rgba(184, 0, 21, 0.3);
+    z-index: 10;
+}
+
+/* Selo "MAIS POPULAR" */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    background-color: var(--vermelho-destaque);
+    /* color: var(--branco); */
+    padding: 5px 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+}
+
+
+/* Header do Card */
+.card-header {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    padding: 20px 0;
+}
+
+.plan-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.plan-duration {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Seção de Preço */
+.price-section {
+    padding: 25px 20px 15px;
+    background-color: #e8eaf6; 
+    /* Um azul clarinho para a área de preço */
+}
+
+.price-info {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-display {
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    vertical-align: top;
+    color: var(--azul-principal);
+}
+
+.main-price {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--azul-principal);
+}
+
+.cents {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--azul-principal);
+    vertical-align: top;
+}
+
+.matricula-info {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--vermelho-destaque);
+    padding: 5px;
+}
+
+/* Lista de Recursos */
+.features-list {
+    list-style: none;
+    padding: 20px 30px;
+    text-align: left;
+    color: #333;
+}
+
+.feature-item {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--cinza-claro);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.feature-item i {
+    color: var(--azul-principal);
+    margin-right: 10px;
+    width: 15px; /* Alinha os ícones */
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+.highlight {
+    color: var(--vermelho-destaque); /* Destaque para o material grátis */
+    font-weight: 700;
+}
+
+/* Botão CTA */
+.cta-button {
+    display: block;
+    background-color: var(--vermelho-destaque);
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #d61c30;
+}
+
+/* --- Responsividade (Ajustes para telas menores) --- */
+@media (max-width: 1024px) {
+    .pricing-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column; /* Empilha os cards em telas menores */
+        align-items: center;
+    }
+    .pricing-card {
+        max-width: 400px; /* Aumenta a largura em telas menores para melhor leitura */
+    }
+    .featured-card {
+        margin: 15px 0; /* Espaçamento ao empilhar */
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+#oferta{
+  text-align: right;
+
+}
+
+#botao_venda{
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: rgb(5, 0, 0);
+  width: 100%;
+  height: 50px;
+  font-size: 26px;
+  border-radius: 20px;
+}
+
+.nav-link{
+  background-color: gold;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  border-radius: 5px;
+  font-size: large;
+
+}
+
+.card-title, .card-text{
+  font-weight: 800;
+}
+
+.faturar{
+  background-color: gold;
+  color: #000000;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+h1,h3,h6{
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Calibri';
+}
+
+:root{
+    --black:    #000000;
+    --vermelho:    #940f0b; /* lilás */
+    --dark-blue:#061428; /* azul escuro */
+    --fg:       #EAF0FF; /* cor do texto para contraste */
+  }
+
+  /* Classe que aplica o fundo gradiente */
+  .tech-bg{
+    min-height: 100vh;
+    /* display: flex;   */
+    /* align-items: center; */
+    /* justify-content: center;  */
+
+    background: linear-gradient(135deg,
+                var(--black)   0%,
+                var(--dark-blue) 45%,
+                var(--vermelho)   100%);
+
+    background-size: 200% 200%;
+    animation: shiftGradient 8s ease-in-out infinite;
+
+    color: var(--fg);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  @keyframes shiftGradient{
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+
