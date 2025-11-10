@@ -1,4 +1,6 @@
 *{
+     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,18 +27,6 @@ border-radius: 2rem;
     border-radius: 2rem;
 }
 
-#euquero{
-    color: gold;
-    background-color: #0a1f44;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 30px;
-}
-
-#segundo_bloco{
-    margin-top: 70px;
-}
-
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -58,6 +48,9 @@ border-radius: 2rem;
   height: 35px;
   filter: invert(100%); /* deixa o ícone branco */
  }  
+ .btn{
+    animation: pulse 1.5s infinite;
+ }
 
  @keyframes pulse {
   0% { transform: scale(1); }
@@ -73,13 +66,6 @@ border-radius: 2rem;
     /* --cinza-fundo: #f4f4f9; Fundo suave da seção */
     --branco: #ffffff;
     --cinza-claro: #dddddd;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilização da Seção (fundo e centralização) */
@@ -294,22 +280,13 @@ border-radius: 2rem;
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 800;
+  background-color: #d5f506;
   color: rgb(5, 0, 0);
   width: 100%;
   height: 50px;
   font-size: 26px;
   border-radius: 20px;
-}
-
-.nav-link{
-  background-color: gold;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  border-radius: 5px;
-  font-size: large;
-
 }
 
 .card-title, .card-text{
@@ -338,7 +315,7 @@ h1,h3,h6{
 
   /* Classe que aplica o fundo gradiente */
   .tech-bg{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* display: flex;   */
     /* align-items: center; */
     /* justify-content: center;  */
@@ -352,8 +329,8 @@ h1,h3,h6{
     animation: shiftGradient 8s ease-in-out infinite;
 
     color: var(--fg);
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    margin-top: 5px;
+    /* font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
+    /* margin-top: 5px; */
     padding: 5px;
     box-sizing: border-box;
   }
